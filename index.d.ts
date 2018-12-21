@@ -32,19 +32,29 @@ export declare class Luxand extends IonicNativePlugin {
      * This function does something
      * @param arg1 {string} Some param to configure something
      * @param arg2 {number} Another param to configure something
-     * @return {Promise<any>} Returns a promise that resolves when something happens
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
-    identify(): Promise<any>;
+    identify(): Promise<OMLFacialData>;
     /**
      * This function does something
      * @param arg1 {string} Some param to configure something
      * @param arg2 {number} Another param to configure something
-     * @return {Promise<any>} Returns a promise that resolves when something happens
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
-    login(): Promise<any>;
+    login(): Promise<OMLFacialData>;
 }
-export default interface LuxandConfig {
+export interface LuxandConfig {
     licence: string;
     dbname: string;
     loginTryCount: number;
+}
+export interface OMLFacialData {
+    status: string;
+    message: string;
+    extra: {
+        AGE?: any;
+        GENDER?: any;
+        EYESOPENED?: any;
+        SMILE: any;
+    };
 }

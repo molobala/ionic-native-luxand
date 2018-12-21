@@ -70,19 +70,19 @@ var Luxand = (function (_super) {
      * This function does something
      * @param arg1 {string} Some param to configure something
      * @param arg2 {number} Another param to configure something
-     * @return {Promise<any>} Returns a promise that resolves when something happens
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     /**
        * This function does something
        * @param arg1 {string} Some param to configure something
        * @param arg2 {number} Another param to configure something
-       * @return {Promise<any>} Returns a promise that resolves when something happens
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     Luxand.prototype.identify = /**
        * This function does something
        * @param arg1 {string} Some param to configure something
        * @param arg2 {number} Another param to configure something
-       * @return {Promise<any>} Returns a promise that resolves when something happens
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     function () {
         return; // We add return; here to avoid any IDE / Compiler errors
@@ -91,19 +91,19 @@ var Luxand = (function (_super) {
      * This function does something
      * @param arg1 {string} Some param to configure something
      * @param arg2 {number} Another param to configure something
-     * @return {Promise<any>} Returns a promise that resolves when something happens
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     /**
        * This function does something
        * @param arg1 {string} Some param to configure something
        * @param arg2 {number} Another param to configure something
-       * @return {Promise<any>} Returns a promise that resolves when something happens
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     Luxand.prototype.login = /**
        * This function does something
        * @param arg1 {string} Some param to configure something
        * @param arg2 {number} Another param to configure something
-       * @return {Promise<any>} Returns a promise that resolves when something happens
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     function () {
         return; // We add return; here to avoid any IDE / Compiler errors

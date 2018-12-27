@@ -22,26 +22,32 @@ import { IonicNativePlugin } from '@ionic-native/core';
  */
 export declare class Luxand extends IonicNativePlugin {
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Initialize Luxand SDK
+     * @param config {LuxandConfig} Some param to configure something
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
     init(config: LuxandConfig): Promise<any>;
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Identify methode, try to register a face in internal data base
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     identify(): Promise<OMLFacialData>;
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Login method, try to authenticated a face
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     login(): Promise<OMLFacialData>;
+    /**
+     * clear method, try to remove a face from internal database
+     * @param id {number}
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+     */
+    clear(id: number): Promise<OMLFacialData>;
+    /**
+     * clearMemory method, try to clear internal database
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+     */
+    clearMemory(): Promise<OMLFacialData>;
 }
 export interface LuxandConfig {
     licence: string;
@@ -51,6 +57,8 @@ export interface LuxandConfig {
 export interface OMLFacialData {
     status: string;
     message: string;
+    name: string;
+    id: number;
     extra: {
         AGE?: any;
         GENDER?: any;

@@ -46,63 +46,81 @@ var Luxand = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Initialize Luxand SDK
+     * @param config {LuxandConfig} Some param to configure something
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
     /**
-       * This function does something
-       * @param arg1 {string} Some param to configure something
-       * @param arg2 {number} Another param to configure something
+       * Initialize Luxand SDK
+       * @param config {LuxandConfig} Some param to configure something
        * @return {Promise<any>} Returns a promise that resolves when something happens
        */
     Luxand.prototype.init = /**
-       * This function does something
-       * @param arg1 {string} Some param to configure something
-       * @param arg2 {number} Another param to configure something
+       * Initialize Luxand SDK
+       * @param config {LuxandConfig} Some param to configure something
        * @return {Promise<any>} Returns a promise that resolves when something happens
        */
     function (config) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Identify methode, try to register a face in internal data base
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     /**
-       * This function does something
-       * @param arg1 {string} Some param to configure something
-       * @param arg2 {number} Another param to configure something
+       * Identify methode, try to register a face in internal data base
        * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     Luxand.prototype.identify = /**
-       * This function does something
-       * @param arg1 {string} Some param to configure something
-       * @param arg2 {number} Another param to configure something
+       * Identify methode, try to register a face in internal data base
        * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     function () {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Login method, try to authenticated a face
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     /**
-       * This function does something
-       * @param arg1 {string} Some param to configure something
-       * @param arg2 {number} Another param to configure something
+       * Login method, try to authenticated a face
        * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     Luxand.prototype.login = /**
-       * This function does something
-       * @param arg1 {string} Some param to configure something
-       * @param arg2 {number} Another param to configure something
+       * Login method, try to authenticated a face
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+       */
+    function () {
+        return; // We add return; here to avoid any IDE / Compiler errors
+    };
+    /**
+     * clear method, try to remove a face from internal database
+     * @param id {number}
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+     */
+    /**
+       * clear method, try to remove a face from internal database
+       * @param id {number}
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+       */
+    Luxand.prototype.clear = /**
+       * clear method, try to remove a face from internal database
+       * @param id {number}
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+       */
+    function (id) {
+        return; // We add return; here to avoid any IDE / Compiler errors
+    };
+    /**
+     * clearMemory method, try to clear internal database
+     * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+     */
+    /**
+       * clearMemory method, try to clear internal database
+       * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
+       */
+    Luxand.prototype.clearMemory = /**
+       * clearMemory method, try to clear internal database
        * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
        */
     function () {
@@ -129,6 +147,18 @@ var Luxand = (function (_super) {
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
     ], Luxand.prototype, "login", null);
+    __decorate([
+        Cordova(),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Number]),
+        __metadata("design:returntype", Promise)
+    ], Luxand.prototype, "clear", null);
+    __decorate([
+        Cordova(),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", Promise)
+    ], Luxand.prototype, "clearMemory", null);
     /**
      * @name Luxand
      * @description

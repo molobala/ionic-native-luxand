@@ -66,16 +66,18 @@ var Luxand = (function (_super) {
     };
     /**
      * Identify methode, try to register a face in internal data base
+     * @param params
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
-    Luxand.prototype.identify = function () {
+    Luxand.prototype.identify = function (params) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     /**
      * Login method, try to authenticated a face
+     * @param params
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
-    Luxand.prototype.login = function () {
+    Luxand.prototype.login = function (params) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     /**
@@ -109,13 +111,13 @@ __decorate([
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], Luxand.prototype, "identify", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], Luxand.prototype, "login", null);
 __decorate([

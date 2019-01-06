@@ -29,14 +29,20 @@ export declare class Luxand extends IonicNativePlugin {
     init(config: LuxandConfig): Promise<any>;
     /**
      * Identify methode, try to register a face in internal data base
+     * @param params
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
-    identify(): Promise<OMLFacialData>;
+    identify(params: {
+        timeout: number;
+    }): Promise<OMLFacialData>;
     /**
      * Login method, try to authenticated a face
+     * @param params
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
-    login(): Promise<OMLFacialData>;
+    login(params: {
+        timeout: number;
+    }): Promise<OMLFacialData>;
     /**
      * clear method, try to remove a face from internal database
      * @param id {number}

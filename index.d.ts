@@ -29,6 +29,7 @@ export declare class Luxand extends IonicNativePlugin {
     init(config: LuxandConfig): Promise<any>;
     /**
      * Identify methode, try to register a face in internal data base
+     * @param params
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     identify(params: {
@@ -36,6 +37,7 @@ export declare class Luxand extends IonicNativePlugin {
     }): Promise<OMLFacialData>;
     /**
      * Login method, try to authenticated a face
+     * @param params
      * @return {Promise<OMLFacialData>} Returns a promise that resolves when something happens
      */
     login(params: {
